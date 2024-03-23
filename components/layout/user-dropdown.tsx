@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { signOut } from "next-auth/react";
 import { LayoutDashboard, LogOut } from "lucide-react";
-import Popover from "@/components/shared/popover";
 import Image from "next/image";
 import { Session } from "next-auth";
 
@@ -15,7 +14,7 @@ export default function UserDropdown({ session }: { session: Session }) {
 
   return (
     <div className="relative inline-block text-left">
-      <Popover
+      {/* <Popover
         content={
           <div className="w-full rounded-md bg-white p-2 sm:w-56">
             <div className="p-2">
@@ -59,7 +58,7 @@ export default function UserDropdown({ session }: { session: Session }) {
             height={40}
           />
         </button>
-      </Popover>
+      </Popover> */}
     </div>
   );
 }

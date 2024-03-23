@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useDemoModal } from "@/components/home/demo-modal";
+import { useDemoModal } from "./demo-modal";
 import Popover from "@/components/shared/popover";
 import Tooltip from "@/components/shared/tooltip";
 import { ChevronDown } from "lucide-react";
@@ -16,7 +16,7 @@ export default function ComponentGrid() {
         onClick={() => setShowDemoModal(true)}
         className="flex w-36 items-center justify-center rounded-md border border-gray-300 px-3 py-2 transition-all duration-75 hover:border-gray-800 focus:outline-none active:bg-gray-100"
       >
-        <p className="text-gray-600">Modal</p>
+        <p className="text-gray-600">Modals</p>
       </button>
       <Popover
         content={
